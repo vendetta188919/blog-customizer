@@ -6,7 +6,7 @@
 	row-gap: 24px;
 	max-width: var(--container-width, auto);
 	margin: 0 auto;
-	padding: 72px 0 144px;
+	padding: 90px 0 144px;
 }
 
 .titleDescription {
@@ -14,7 +14,11 @@
 }
 
 .image {
-	width: 100%;
-	height: auto;
+	display: block;
+	width: var(--image-width, 1600px);
+	height: 1000px;
 	margin-top: 26px;
+	margin-right: calc(50vw - calc(var(--image-width, 1600px) / 2));
+	margin-left: calc(50vw - calc(var(--image-width, 1600px) / 2));
+	object-fit: cover;
 }
